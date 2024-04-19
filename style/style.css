@@ -48,6 +48,11 @@ p {
     background-color: #e7e9ea ;
     border: none;
     border-radius: 5px;
+    font-size: 0.9rem;
+}
+.inputPassword{
+    font-weight: 900;
+
 }
 .form button {
     width: 11vw;
@@ -70,9 +75,18 @@ p {
     overflow: hidden;
 }
 .plane {
-    width: 40%;
-    height: 25%;
+    width: 32%;
+    height: 21%;
     margin-bottom: -12%;
+    animation: plane 5s linear infinite;
+}
+@keyframes plane {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(100deg);
+    }
 }
 .loginImage{
     width: 100%;
