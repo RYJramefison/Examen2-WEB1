@@ -5,15 +5,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 #login {
-    border: solid #0d7cc6 ;
-    /* width: 100%; */
+    /* width: 100vw; */
     height: 100vh;
     display: flex;
     background-color: #0d7cc6;
 }
 .login,.picture {
     flex-basis: 50%;
-    border: solid blueviolet;
 }
 .login {
     background-color: #ffffff;
@@ -69,7 +67,7 @@ p {
     align-items: center;
     background-image: url(../image/loginBackgroud.png);
     background-size: cover;
-    
+    overflow: hidden;
 }
 .plane {
     width: 40%;
@@ -79,6 +77,14 @@ p {
 .loginImage{
     width: 100%;
     height: 80%;
-    margin-bottom: -10%;
-    transition: 2s ;
+    margin-bottom: -4%;
+    animation: loginImage 1.2s linear alternate infinite;
+}
+@keyframes loginImage {
+    0% {
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(15px);
+    }
 }
