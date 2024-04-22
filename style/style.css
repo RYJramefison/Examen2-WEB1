@@ -35,6 +35,7 @@ p {
     color: #010101 ;
 }
 .form {
+    position: relative;
     margin-top: 3%;
     display: flex;
     flex-direction: column;
@@ -50,10 +51,22 @@ p {
     border: none;
     border-radius: 5px;
     font-size: 0.9rem;
+    outline: none;
 }
-.inputPassword{
-    font-weight: 900;
-
+.form1,.form2 {
+    position: relative;
+}
+.form1 i,.form2 i{
+    position: absolute;
+    z-index: 10;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-130%);
+    /* width: 5vw; */
+    /* height: 100vh; */
+}
+.form2 input {
+    font-size: xx-large;
 }
 .form button {
     width: 11vw;
@@ -86,7 +99,7 @@ p {
         transform: scale(0);
     }
     100% {
-        transform: scale(100deg);
+        transform: scale(1);
     }
 }
 .loginImage {
@@ -113,6 +126,14 @@ nav {
     display: flex;
     flex-direction: row;
     background-color: #bae2ff ;
+    position: sticky;
+    top: 0;
+    transition: 2s;
+}
+.styleNavBar {
+    margin: 20px 30px 0px 30px;
+    background-color: #ffffff;
+    border-radius: 1ch;
 }
 .logo,.sign {
     justify-content: center;
@@ -151,3 +172,11 @@ nav {
     background-color: #0d7cc6;
     color: #bae2ff;
 }
+/* 
+header {
+    height: 101vh;
+    margin-top: -110px;
+    border: solid maroon;
+    background-color: #2e2e2e;
+    border-radius: 3ch;
+} */
