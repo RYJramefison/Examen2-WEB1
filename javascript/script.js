@@ -10,3 +10,5 @@ window.addEventListener('scroll', function() {
     }
     positionPrecedente = positionActuelle;
 });
+
+
