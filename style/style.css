@@ -178,7 +178,7 @@ nav {
 }
 
 header {
-    height: 110vh;
+    height: 98vh;
     margin-top: -110px;
     /* border: solid maroon; */
     /* background-color: #2e2e2e; */
@@ -189,7 +189,7 @@ header {
     background-color: #faf2f3;
     flex-basis: 50%;
     height: 100%;
-    border-radius: 1.5ch 0 0 1.5ch ;
+    border-radius: 2.5ch 0 0 2.5ch ;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -219,8 +219,8 @@ header {
     
 }
 .pictureHero {
-    border-radius: 0 1.5ch 1.5ch 0;
-    background-color: #f2fafa;
+    border-radius: 0 2.5ch 2.5ch 0;
+    background-color: #e9fafa;
     flex-basis: 50%;
     height: 100%;
     overflow: hidden;
@@ -234,7 +234,7 @@ header {
 .girl {
     width: 63%;
     height: 65%;
-    margin-bottom: -70px;
+    margin-bottom: -150px;
     margin-right: -100px;
     /* background-color: #b2dffd; */
     /* border-radius: 50ch; */
@@ -254,4 +254,80 @@ header {
     height: 10%;
     margin-left: -37%;
     margin-bottom: -70%;
+}
+#reservation{
+    /* border: solid green; */
+    height: 75vh;
+    display: flex;
+}
+.imageBeautifulPlace{
+    display: flex;
+    flex-basis: 47%;
+    /* border: solid navy; */
+    flex-wrap: wrap;
+    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.imageBeautifulPlace img {
+    margin-left: 10px;
+    margin-top: -50px;
+    width: 30%;
+    height: 33%;
+    border-radius: 2ch;
+    margin-bottom: -100px;
+}
+.imageBeautifulPlace .large{
+    width: 36%;
+    height: 40%;
+    /* margin-left: 50px; */
+}
+#bas {
+    margin-top: -150px;
+    
+}
+.descriptionPlace {
+    flex-basis: 53%;
+    /* border: solid maroon; */
+    margin-block: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+    margin-right: 3%;
+}
+.percentage {
+    display: flex;
+}
+.percentage1,.percentage2,.percentage3 {
+    text-align: center;
+}
+.titlePlace p{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.descriptionPlace .button {
+    margin-left: 0;
+    
+}
+.descriptionPlace .button button {
+    padding: 2.4% 7%;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #1571ae;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.p_Description p{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.percentage h1 {
+    font-weight: 550;
+    font-size: xx-large;
+}
+.percentage p {
+    font-size: 14px;
 }
