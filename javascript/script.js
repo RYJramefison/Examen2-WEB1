@@ -1,18 +1,12 @@
-let previousScrollPosition = window.pageYOffset;
+let positionPrecedente = window.pageYOffset;
 const navbar = document.querySelector("nav");
 
-window.addEventListener('DOMContentLoaded', (event) => {
-    if (window.pageYOffset === 0) {
-        navbar.classList.add("styleNavBar");
-    }
-});
-
-window.onscroll = function() {
-    let currentScrollPosition = window.pageYOffset;
-    if (previousScrollPosition > currentScrollPosition && currentScrollPosition === 0) {
-        navbar.classList.add("styleNavBar");
-    } else {
+window.addEventListener('scroll', function() {
+    let positionActuelle = window.pageYOffset;
+    if (positionPrecedente > positionActuelle && positionActuelle === 0) {
         navbar.classList.remove("styleNavBar");
+    } else {
+        navbar.classList.add("styleNavBar");
     }
-    previousScrollPosition = currentScrollPosition;
-};
+    positionPrecedente = positionActuelle;
+});
