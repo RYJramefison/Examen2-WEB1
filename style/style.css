@@ -271,7 +271,7 @@ header {
     box-shadow: 1px -1px 3px rgba(255, 253, 253, 0.489) ;
     padding: 0.4vh;
 }
-#reservation{
+#About{
     /* border: solid green; */
     height: 75vh;
     display: flex;
@@ -353,21 +353,26 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid black;
+    /* border: solid black; */
+}
+.titleTopDestination {
+    margin: 10px;
 }
 .pictureDestination {
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     width: 95vw;
     height: 50vh;
-    border: solid green;
+    /* border: solid green; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-block: 2%;
 }
 .pictureDestination1,.pictureDestination2,.pictureDestination3,.pictureDestination4 {
-    width: 20%;
-    height: 100%;
+    width: 18vw;
+    height: 50vh;
     /* border: solid blue; */
     display: flex;
     flex-direction: column;
@@ -439,9 +444,108 @@ header {
     align-items: center;
     padding: 5px;
     border-radius: 1ch;
+    font-weight: bolder;
     border: none;
     background-color: #bce2fb;
 }
 .much button i {
     margin: 5px;
+}
+#reservation {
+    /* border: solid #010101; */
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formReservation {
+    background-color: #159fae87;
+    width: 80%;
+    border-radius: 1.5ch;
+    height: 80%;
+    display: flex;
+    padding: 15px;
+}
+.formReservation .formulaire {
+    flex-basis: 55%;
+    /* border: solid aqua; */
+}
+.imageReservation {
+    
+    flex-basis: 45%;
+    /* border: solid #f1a602; */
+    background-image: url(../image/reservation.jpg);
+    background-size: cover;
+    border-radius: 2ch;
+}
+.formReservation .formulaire h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    
+}
+.formReservation .formulaire h2 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    
+}
+.formReservation .formulaire p {
+    margin-block: 15px;
+}
+.makeReservation {
+    /* border:  solid darkorchid; */
+    height: 50%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.makeReservation .makeReservationForm{
+    /* background-color: #2e2e2e; */
+    width: 40%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.makeReservation input {
+    height: 6vh;
+    padding-left: 15%;
+    padding-right: 35%;
+    justify-content: left;
+    font-size: 1rem;
+    color: #2e2e2e;
+    border:none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 4px rgb(167, 167, 167);
+}
+.makeReservation h4{
+    margin-bottom: 10px;
+}
+.makeReservation i{
+    position: absolute;
+    z-index: 10;
+    left: 10px;
+    transform: translateY(15px);
+}
+.makeReservation .location {
+    padding-right: 0;
+}
+.buttonReservation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+}
+.buttonReservation button {
+    width: 75%;
+    height: 5vh;
+    background-color: #ff8d14;
+    color: white;
+    border: none;
+    font-size: 1.05rem;
+    border-radius: 3px;
+    font-weight: 600;
 }
