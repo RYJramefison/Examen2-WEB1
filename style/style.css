@@ -518,6 +518,7 @@ header {
     border:none;
     border-radius: 3px;
     box-shadow: 0px 0px 4px rgb(167, 167, 167);
+    outline: none;
 }
 .makeReservation h4{
     margin-bottom: 10px;
@@ -528,7 +529,7 @@ header {
     left: 10px;
     transform: translateY(15px);
 }
-.makeReservation .location {
+.makeReservation .noPaddingRight {
     padding-right: 0;
 }
 .buttonReservation {
@@ -548,4 +549,62 @@ header {
     font-size: 1.05rem;
     border-radius: 3px;
     font-weight: 600;
+}
+#hotel {
+    /* border: solid gold; */
+    height: 90vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hotel p {
+    margin-bottom: 15px;
+    font-weight: 450;
+}
+.pictureHotel {
+    /* border: solid green; */
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.pictureHotel1,.pictureHotel2,.pictureHotel3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #0d7cc6; */
+    margin-inline: 15px;
+}
+.backgroundImage1,.backgroundImage2,.backgroundImage4,.backgroundImage5 {
+    width: 27vw;
+    height: 34vh;
+    margin-block: 5px;
+    border-radius: 1ch;
+    background-image: url(../image/hotel1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.backgroundImage2{
+    background-image: url(../image/hotel2.jpg); 
+}
+.backgroundImage4{
+    background-image: url(../image/hotel3.jpg); 
+}
+.backgroundImage5{
+    background-image: url(../image/hotel4.jpg); 
+    background-size: 120%;
+    background-position: left;
+}
+.pictureHotel2 {
+    width: 23vw;
+    height: 68.5vh;
+    border-radius: 1ch;
+    background-image: url(../image/hotel5.jpg) ;
+    background-size: 250%;
+    background-position: center;
 }
