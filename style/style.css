@@ -126,8 +126,8 @@ nav {
     display: flex;
     flex-direction: row;
     position: sticky;
-    top: 0;
     transition: 1s;
+    top: 0;
     z-index: 10;
     margin: 25px 30px 0px 30px;
     background-color: #ffffff;
@@ -286,18 +286,36 @@ header {
     align-items: center;
     
 }
-.imageBeautifulPlace img {
+.imageBeautifulPlace1,.imageBeautifulPlace4,.imageBeautifulPlace3,.imageBeautifulPlace2 {
     margin-left: 10px;
     margin-top: -50px;
-    width: 30%;
-    height: 33%;
+    /* border: solid black; */
+    width: 35%;
+    height: 39%;
     border-radius: 2ch;
     margin-bottom: -100px;
+    background-size: cover;
+    background-position: center;
 }
-.imageBeautifulPlace .large{
-    width: 36%;
-    height: 40%;
+.imageBeautifulPlace2,.imageBeautifulPlace3{
+    width: 38%;
+    height: 43%;
     /* margin-left: 50px; */
+}
+.imageBeautifulPlace3,.imageBeautifulPlace4{
+    margin-top: -120px;
+}
+.imageBeautifulPlace1 {
+    background-image: url(../image/about1.jpg);
+}
+.imageBeautifulPlace2 {
+    background-image: url(../image/about2.jpg);
+}
+.imageBeautifulPlace3 {
+    background-image: url(../image/about3.jpg);
+}
+.imageBeautifulPlace4 {
+    background-image: url(../image/about4.jpg);
 }
 #bas {
     margin-top: -150px;
