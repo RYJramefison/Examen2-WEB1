@@ -232,6 +232,39 @@ header {
     position: relative;
 
     /* #e8f0f0 */
+    position: relative;
+}
+
+.pictureHero .note {
+    position: absolute;
+    width: 5vw;
+    background-color: #f6f6f6;
+    justify-content: left;
+    display: flex;
+    padding: 4px;
+    border-radius: 2ch;
+    /* justify-content: space-between; */
+    color: #010101;
+    margin-top: -33vh;
+    margin-left: -25vw;
+}
+.pictureHero .note p {
+    margin: 0 auto;
+    color: #010101;
+}
+.starNote {
+    display: flex;
+    border: solid #010101 2px;
+    height: 3.3vh;
+    width: 1.6dvw;
+    background-color: #ff8d14;
+    border-radius: 2ch;
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+}
+.starNote i {
+    color: #010101;
 }
 .containGirl{
     margin-top: 90Px;
@@ -307,6 +340,9 @@ header {
 }
 .imageBeautifulPlace1 {
     background-image: url(../image/about1.jpg);
+
+
+    
 }
 .imageBeautifulPlace2 {
     background-image: url(../image/about2.jpg);
