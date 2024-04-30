@@ -6,6 +6,14 @@
     box-sizing: border-box;
     font-family: Quicksand;
 }
+#errorMessage {
+    color: white;
+    background-color: red;
+    padding: 5px;
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+}
 #login {
     /* width: 100vw; */
     height: 100vh;
@@ -735,7 +743,7 @@ footer {
     margin: 20px;
 }
 .count img {
-    width: 1.5vw;
+    width: 1.2vw;
     height: 2.5vh;
 }
 .divCount {
@@ -749,7 +757,7 @@ footer {
     transition: 0.1s;
 }
 .facebook img {
-    width: 1.8vw;
+    width: 1.4vw;
     height: 3vh;
     margin-bottom: -25%;
     display: flex;
@@ -1566,7 +1574,7 @@ footer {
     align-items: center;
 }
 .count img {
-    width: 55%;
+    width: 60%;
     height: 2.5vh;
 }
 .divCount {
@@ -1581,7 +1589,7 @@ footer {
 }
 
 .facebook img {
-    width: 55%;
+    width: 70%;
     height: 3vh;
     margin-bottom: -25%;
     display: flex;

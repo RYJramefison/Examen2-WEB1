@@ -1,3 +1,6 @@
+
+
+
 let positionPrecedente = window.scrollY;
 const navbar = document.querySelector("nav");
 
@@ -12,6 +15,7 @@ window.addEventListener('scroll', function() {
 });
 
 
+
 const fermer = document.querySelector(".fa-times-circle");
 const ouvrir = document.querySelector(".bars");
 const navigation = document.querySelector(".navigation");
@@ -21,4 +25,14 @@ ouvrir.addEventListener('click',function(){
 fermer.addEventListener('click',function(){
     navigation.classList.remove("showNavigation");
     
-})
+});
+
+
+
+
+
+
+
+
+
+
