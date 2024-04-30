@@ -10,3 +10,15 @@ window.addEventListener('scroll', function() {
     }
     positionPrecedente = positionActuelle;
 });
+
+
+const fermer = document.querySelector(".fa-times-circle");
+const ouvrir = document.querySelector(".bars");
+const navigation = document.querySelector(".navigation");
+ouvrir.addEventListener('click',function(){
+    navigation.classList.toggle("showNavigation");
+})
+fermer.addEventListener('click',function(){
+    navigation.classList.remove("showNavigation");
+    
+})
