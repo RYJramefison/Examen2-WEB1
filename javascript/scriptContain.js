@@ -26,7 +26,27 @@ fermer.addEventListener('click',function(){
     navigation.classList.remove("showNavigation");
     
 });
+const clickToLogin = document.querySelector(".sign button");
+clickToLogin.addEventListener("click",function(){
+    setTimeout(function() {
+        window.location.href = "../index.html";
+    }, 1000);
+})
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const liensScrollDoux = document.querySelectorAll('.navigation a');
+
+    liensScrollDoux.forEach(lien => {
+        lien.addEventListener('click', function(e) {
+            e.preventDefault();
+            const cible = this.getAttribute('href');
+            document.querySelector(cible).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+});
 
 
 
