@@ -825,9 +825,6 @@ footer {
 }
 }
 
-
-
-
 @media only screen and (max-width: 700px) {
     * {
         padding: 0;
@@ -903,14 +900,15 @@ footer {
         margin-bottom: 15px;
     }
     .addchangement {
-        width: 6vw;
-        height: 4.2vh;
+        font-size: 0.8rem;
+        width: 10vw;
+        height: 4.vh;
     }
     .erreur {
-        margin-top: 10%;
+        margin-bottom: 4%;
         background-color: rgb(253, 29, 29);
-        padding: 1.2vh 1.7vw;
-        font-size: 0.8rem;
+        padding: 1vh 1vw;
+        font-size: 0.5rem;
         color: #f2f2f2;
         display: none;
     }
@@ -1002,15 +1000,22 @@ footer {
 .navigation .bars {
     display: block;
 }
+.title_login {
+    font-size: xxx-large;
+    margin-bottom: 10px;
+    color: #010101 ;
+    font-weight: 600;
+}
 .logo img{
     margin-left: 25px;
     width: 55%;
     height: 65%;
 }
 .logo p {
+    margin: 10px;
     font-weight: bolder;
     color: #0d7cc6;
-    font-size: large;
+    font-size: 1rem;
 }
 .sign button{
     margin-left: 15px;
@@ -1232,7 +1237,7 @@ header {
 
 
 #topDestination {
-    height: 230vh;
+    height: 285vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1253,11 +1258,11 @@ header {
     justify-content: center;
     align-items: center;
     /* border: solid green; */
-    margin: 85vh;
+    margin: 110vh;
 }
 .pictureDestination1,.pictureDestination2,.pictureDestination3,.pictureDestination4 {
     width: 85vw;
-    height: 50vh;
+    height: 65vh;
     /* border: solid blue; */
     display: flex;
     flex-direction: column;
@@ -1271,23 +1276,25 @@ header {
 }
 .pictureDestination1 .picture img {
     width: 75vw;
-    height: 50vh;
-    border-radius: 20px 20px 0 0;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    /* border:  solid rebeccapurple; */
+    z-index: 10;
 }
 .pictureDestination2 .picture img {
     width: 75vw;
-    height: 50vh;
-    border-radius: 3 3ch 0 0;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
 }
 .pictureDestination3 .picture img {
     width: 75vw;
-    height: 50vh;
-    border-radius: 3 3ch 0 0;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
 }
 .pictureDestination4 .picture img {
     width: 75vw;
-    height: 50vh;
-    border-radius: 3 3ch 0 0;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
 }
 .countryDurations {
     /* border: solid red; */
