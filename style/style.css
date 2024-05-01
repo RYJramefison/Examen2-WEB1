@@ -6,14 +6,8 @@
     box-sizing: border-box;
     font-family: Quicksand;
 }
-#errorMessage {
-    color: white;
-    background-color: red;
-    padding: 5px;
-    display: none;
-    margin-top: 10px;
-    text-align: center;
-}
+
+
 #login {
     /* width: 100vw; */
     height: 100vh;
@@ -78,7 +72,7 @@ p {
 .form2 input {
     font-size: xx-large;
 }
-.form button {
+.loginBoutton {
     width: 11vw;
     height: 5vh;
     background-color: #0d7cc6 ;
@@ -89,6 +83,19 @@ p {
     font-size: 1rem;
     font-weight: bolder;
 }
+.addchangement {
+    width: 6vw;
+    height: 4.2vh;
+}
+.erreur {
+    margin-top: 10%;
+    background-color: rgb(253, 29, 29);
+    padding: 1.2vh 1.7vw;
+    font-size: 0.8rem;
+    color: #f2f2f2;
+    display: none;
+}
+
 .picture {
     display: flex;
     flex-direction: column;
@@ -883,7 +890,7 @@ footer {
     .form2 input {
         font-size: xx-large;
     }
-    .form button {
+    .loginBoutton {
         width: 28vw;
         height: 4.5vh;
         background-color: #0d7cc6 ;
@@ -894,6 +901,18 @@ footer {
         font-size: 1rem;
         font-weight: bolder;
         margin-bottom: 15px;
+    }
+    .addchangement {
+        width: 6vw;
+        height: 4.2vh;
+    }
+    .erreur {
+        margin-top: 10%;
+        background-color: rgb(253, 29, 29);
+        padding: 1.2vh 1.7vw;
+        font-size: 0.8rem;
+        color: #f2f2f2;
+        display: none;
     }
     .picture {
         display: flex;
