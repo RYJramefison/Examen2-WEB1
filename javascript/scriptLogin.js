@@ -1,4 +1,6 @@
+
 const boutton = document.querySelector(".loginBoutton");
+const erreur = document.querySelector(".erreur");
 
 boutton.addEventListener("click", function() {
     let email = document.querySelector(".inputEmail").value;
@@ -15,11 +17,13 @@ boutton.addEventListener("click", function() {
         boutton.innerText = ".......";
         boutton.classList.add("addchangement")
         setTimeout(function() {
+            
             boutton.innerText = "Login Now";
             boutton.classList.remove("addchangement")
-            document.querySelector(".erreur").style.display = "block";
+            erreur.style.display = "block";
+            
             setTimeout(function() {
-                document.querySelector(".erreur").style.display = "none";
+            erreur.style.display = "none";
             }, 2000);
         }, 3000);
 }

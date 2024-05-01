@@ -49,9 +49,20 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
-
+const askSend = document.querySelector(".askSend");
+const bouttonSend = document.querySelector(".send");
+const containInputSend = document.querySelector(".inputSend");
+bouttonSend.addEventListener('click', function(){
+    if(containInputSend.value.length == 0){
+        alert('please file out this field')
+    }
+        else {
+            askSend.style.display = "block";
+            setTimeout(function() {
+                askSend.style.display = "none";
+            }, 2000)
+        }
+})
 
 
 
