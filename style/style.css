@@ -628,6 +628,18 @@ header {
     border-radius: 3px;
     font-weight: 600;
 }
+.buttonReservation h5 {
+    display: none;
+    padding-block: 2vh;
+    padding-inline: 4vw;
+    background-color: #2d9a36;
+    position: absolute;
+    right: 12%;
+    margin-top: -2%;
+    border-radius: 5ch;
+    color: white;
+    font-weight: 600;
+}
 #hotel {
     /* border: solid gold; */
     height: 90vh;
@@ -1550,6 +1562,18 @@ header {
     border: none;
     font-size: 1.1rem;
     border-radius: 3px;
+    font-weight: 600;
+}
+.buttonReservation h5 {
+    display: none;
+    padding-block: 2vh;
+    padding-inline: 4vw;
+    background-color: #2d9a36;
+    position: absolute;
+    right: 12%;
+    margin-top: -2%;
+    border-radius: 5ch;
+    color: white;
     font-weight: 600;
 }
 footer {

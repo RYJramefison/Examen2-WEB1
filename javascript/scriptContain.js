@@ -64,15 +64,6 @@ bouttonSend.addEventListener('click', function(){
         }
 });
 
-// const bouttonReservation = document.querySelector(".buttonReservation button");
-// const location = document.querySelector("location");
-// const checkIn = document.querySelector(".checkIn");
-// const checkOut = document.querySelector(".checkOut");
-// const envelopel = document.querySelector(".envelope");
-
-// bouttonReservation.addEventListener('click',function(){
-// });
-
 document.addEventListener('DOMContentLoaded', function(){
     let nombrePourcentage = document.querySelector('.nombrePourcentage');
     const aboutSection = document.getElementById("About");
@@ -155,4 +146,27 @@ window.addEventListener('scroll', function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const reservationButton = document.querySelector('.buttonReservation button');
+    const reservationSuccess = document.querySelector(".buttonReservation h5");
+    reservationButton.addEventListener('click', function() {
+        const inputs = document.querySelectorAll('.makeReservationForm input');
+        let allFilled = true;
+        inputs.forEach(input => {
+            if (!input.value) {
+                allFilled = false;
+                return;
+            }
+        });
+        if (allFilled) {
+            reservationSuccess.style.display = "block";
+            setTimeout(function() {
+                reservationSuccess.style.display = "none";
+            }, 2000)
+        } else {
+            alert('Problème : Veuillez remplir tous les champs.');
+
+        }
+    });
+});
 
