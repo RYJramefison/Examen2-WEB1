@@ -62,8 +62,48 @@ bouttonSend.addEventListener('click', function(){
                 askSend.style.display = "none";
             }, 2000)
         }
-})
+});
 
+// const bouttonReservation = document.querySelector(".buttonReservation button");
+// const location = document.querySelector("location");
+// const checkIn = document.querySelector(".checkIn");
+// const checkOut = document.querySelector(".checkOut");
+// const envelopel = document.querySelector(".envelope");
+
+// bouttonReservation.addEventListener('click',function(){
+// });
+
+// document.addEventListener('DOMContentLoaded', function(){
+//     let compteurElement = document.querySelector('.compteur');
+//     let compteur = 0;
+//     function incrementerCompteur(){
+//         compteur++;
+//         if(compteur <= 99){
+//             compteurElement.textContent = compteur + "%";
+//             setTimeout(incrementerCompteur,60);
+//         }
+//     }
+//     incrementerCompteur();
+// })
+
+
+window.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('section');
+    const positionDefilement = window.scrollY;
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (positionDefilement > sectionTop - window.innerHeight / 2) {
+            section.style.transition = 'opacity 1s, transform 1s';
+            section.style.opacity = 1;
+            section.style.transform = 'scale(1)';
+        }
+        else {
+            section.style.transition = 'opacity 1s, transform 1s';
+            section.style.opacity = 0;
+            section.style.transform = 'scale(0.5)';
+        }
+    });
+});
 
 
 
