@@ -961,13 +961,28 @@ footer {
         margin-bottom: -12%;
         animation: plane 5s linear infinite;
     }
+    @keyframes loginImage {
+        0% {
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(15px);
+        }
+    }
     .loginImage {
         width: 100%;
         height: 70%;
         margin-bottom: -4%;
         animation: loginImage 1.2s linear alternate infinite;
     }
-    
+    @keyframes plane {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
     nav {
         /* border: solid black; */
     height: 7dvh;
@@ -1566,12 +1581,12 @@ header {
 }
 .buttonReservation h5 {
     display: none;
-    padding-block: 2vh;
-    padding-inline: 4vw;
+    padding-block: 1vh;
+    padding-inline: 3vw;
     background-color: #2d9a36;
     position: absolute;
-    right: 12%;
-    margin-top: -2%;
+    /* right: 12%; */
+    margin-bottom: -12vh;
     border-radius: 5ch;
     color: white;
     font-weight: 600;
@@ -1722,5 +1737,21 @@ footer {
     .signature p {
     color: #aeaeae;
     font-size: 0.9rem
+}
+.askSend {
+    padding-block: 26px;
+    padding-inline: 18px;
+    right: 1vw;
+    margin-left: -2vw;
+    margin-top: -10vh;
+    background-color: rgb(52, 121, 52);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 100;
+    display: none;
+    position: absolute;
+    /* right: 0;
+    bottom: 0; */
+    border-radius: 20ch;
 }
 }
