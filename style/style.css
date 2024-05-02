@@ -526,9 +526,10 @@ header {
     font-weight: bolder;
     border: none;
     background-color: #bce2fb;
+    font-size: 0.95rem;
 }
 .much button i {
-    margin: 5px;
+    margin: 8px;
     font-size: large;
 }
 #reservation {
