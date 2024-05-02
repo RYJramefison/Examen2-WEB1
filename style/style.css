@@ -552,6 +552,20 @@ header {
     margin-left: -20%;
     margin-bottom: -40%;
 }
+.failedSend {
+    padding-block: 2vh;
+    padding-inline: 2vw;
+    background-color: #0e0e0e;
+    border-radius: 0.5ch;
+    position: absolute;
+    display: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    right: 35%;
+    margin-top: 15%;
+    
+}
 .formReservation {
     background-color: #159fae87;
     width: 80%;
@@ -1483,19 +1497,40 @@ header {
     justify-content: center;
     /* align-items: center; */
 }
+.manquant{
+    padding-block: 2vh;
+    padding-inline: 2vw;
+    background-color: #1c1c1c;
+    border-radius: 1ch;
+    position: absolute;
+    display: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-right: -20%;
+}
+.failedSend {
+    padding-block: 1vh;
+    padding-inline: 2vw;
+    background-color: #0e0e0e;
+    border-radius: 0.5ch;
+    position: absolute;
+    display: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    
+}
 .formReservation .formulaire {
     flex-basis: 55%;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: column;
-    /* border: solid aqua; */
 }
 .imageReservation {
     height: 40vh;
     
     flex-basis: 45%;
-    /* border: solid #f1a602; */
     background-image: url(../image/reservation.jpg);
     background-size: cover;
     background-position: center;
@@ -1514,12 +1549,10 @@ header {
     margin-block: 15px;
 }
 .makeReservation {
-    /* border:  solid darkorchid; */
     height: 50%;
     padding: 5px;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     justify-content: space-around;
     margin-top: 20px;
 }
