@@ -520,7 +520,8 @@ header {
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding-inline: 5px;
+    padding-block: 7px;
     border-radius: 1ch;
     font-weight: bolder;
     border: none;
@@ -528,6 +529,7 @@ header {
 }
 .much button i {
     margin: 5px;
+    font-size: large;
 }
 #reservation {
     height: 90vh;
