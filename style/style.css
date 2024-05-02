@@ -530,7 +530,6 @@ header {
     margin: 5px;
 }
 #reservation {
-    /* border: solid #010101; */
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -546,12 +545,9 @@ header {
 }
 .formReservation .formulaire {
     flex-basis: 55%;
-    /* border: solid aqua; */
 }
 .imageReservation {
-    
     flex-basis: 45%;
-    /* border: solid #f1a602; */
     background-image: url(../image/reservation.jpg);
     background-size: cover;
     border-radius: 2ch;
@@ -570,7 +566,6 @@ header {
     margin-block: 15px;
 }
 .makeReservation {
-    /* border:  solid darkorchid; */
     height: 50%;
     padding: 5px;
     display: flex;
@@ -578,7 +573,6 @@ header {
     justify-content: space-around;
 }
 .makeReservation .makeReservationForm{
-    /* background-color: #2e2e2e; */
     width: 40%;
     height: 45%;
     display: flex;
@@ -639,9 +633,9 @@ header {
     border-radius: 5ch;
     color: white;
     font-weight: 600;
+    margin-inline: 10px;
 }
 #hotel {
-    /* border: solid gold; */
     height: 90vh;
     padding: 10px;
     display: flex;
@@ -654,7 +648,6 @@ header {
     font-weight: 450;
 }
 .pictureHotel {
-    /* border: solid green; */
     width: 90vw;
     height: 80vh;
     display: flex;
@@ -667,7 +660,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: #0d7cc6; */
     margin-inline: 15px;
 }
 .backgroundImage1,.backgroundImage2,.backgroundImage4,.backgroundImage5 {
@@ -705,27 +697,21 @@ footer {
     flex-direction: column;
     justify-content: center;
 }
-
 .contact {
-    /* margin-top: 10px; */
     display: flex;
     flex-basis: 91%;
-    /* border: solid magenta; */
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 .contact1,.contact2,.contact3 {
-    /* border: solid yellow; */
     width: 30%;
     height: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 .contact1 .pictureJRAM {
-    /* border: solid forestgreen; */
     margin-top: 20px ;
     margin-left: -10px;
     width: 50%;
@@ -748,8 +734,6 @@ footer {
 }
 .contact1 .description p{
     color: rgb(168, 168, 168);
-    /* color: white; */
-    
 }
 .contact1 .description {
     color: white;
@@ -837,8 +821,6 @@ footer {
     font-weight: 100;
     display: none;
     position: absolute;
-    /* right: 0;
-    bottom: 0; */
     border-radius: 20ch;
 }
 .signature{
