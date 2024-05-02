@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function(){
                         if(valeurCible === 50){
                             setTimeout(incrementerCompteur, 150);
                         } else {
-                            setTimeout(incrementerCompteur, 35);
+                            setTimeout(incrementerCompteur, 30);
                         }
                     }
                 }

@@ -521,7 +521,7 @@ header {
     justify-content: center;
     align-items: center;
     padding-inline: 5px;
-    padding-block: 7px;
+    padding-block: 6px;
     border-radius: 1ch;
     font-weight: bolder;
     border: none;
@@ -529,7 +529,8 @@ header {
     font-size: 0.95rem;
 }
 .much button i {
-    margin: 8px;
+    margin-inline: 8px;
+    margin-block: 5px;
     font-size: large;
 }
 #reservation {
