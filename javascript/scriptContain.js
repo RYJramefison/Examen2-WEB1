@@ -73,36 +73,85 @@ bouttonSend.addEventListener('click', function(){
 // bouttonReservation.addEventListener('click',function(){
 // });
 
-// document.addEventListener('DOMContentLoaded', function(){
-//     let compteurElement = document.querySelector('.compteur');
-//     let compteur = 0;
-//     function incrementerCompteur(){
-//         compteur++;
-//         if(compteur <= 99){
-//             compteurElement.textContent = compteur + "%";
-//             setTimeout(incrementerCompteur,60);
-//         }
-//     }
-//     incrementerCompteur();
-// })
+document.addEventListener('DOMContentLoaded', function(){
+    let nombrePourcentage = document.querySelector('.nombrePourcentage');
+    const aboutSection = document.getElementById("About");
+    let UneIncrementation = false;
+
+    window.addEventListener('scroll', function() {
+        const positionDefilement = window.scrollY;
+        const sectionTop = aboutSection.offsetTop;
+        
+        if (positionDefilement > sectionTop - window.innerHeight / 2 && !UneIncrementation) {
+            UneIncrementation = true;
+            
+            let entier = 0;
+            function nombreIncrementer(){
+                entier++;
+                if(entier <= 99){
+                    nombrePourcentage.textContent = entier + "%";
+                    setTimeout(nombreIncrementer,70);
+                }
+            }
+            nombreIncrementer();
+        }
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function(){
+    const nombresAIncrementer = document.querySelectorAll('.nombre');
+    const aboutSection = document.getElementById("About");
+    let UneIncrementation = false;
+
+    window.addEventListener('scroll', function() {
+        const positionDefilement = window.scrollY;
+        const sectionTop = aboutSection.offsetTop;
+        
+        if (positionDefilement > sectionTop - window.innerHeight / 2 && !UneIncrementation) {
+            UneIncrementation = true;
+            nombresAIncrementer.forEach(nombre => {
+                let entier = 0;
+                let valeurCible = Number(nombre.innerText);
+                
+                function incrementerCompteur(){
+                    entier++;
+                    if(entier <= valeurCible){
+                        nombre.textContent = entier;
+                        if(valeurCible === 50){
+                            setTimeout(incrementerCompteur, 150);
+                        } else {
+                            setTimeout(incrementerCompteur, 35);
+                        }
+                    }
+                }
+                incrementerCompteur();
+            });
+        }
+    });
+});
 
 
 window.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('section');
-    const positionDefilement = window.scrollY;
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const totalHeight = document.documentElement.scrollHeight - windowHeight;
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        if (positionDefilement > sectionTop - window.innerHeight / 2) {
+        if (scrollPosition > sectionTop - windowHeight / 2) {
             section.style.transition = 'opacity 1s, transform 1s';
             section.style.opacity = 1;
             section.style.transform = 'scale(1)';
-        }
-        else {
+        } else {
             section.style.transition = 'opacity 1s, transform 1s';
             section.style.opacity = 0;
             section.style.transform = 'scale(0.5)';
         }
     });
+    if (scrollPosition >= totalHeight) {
+        window.removeEventListener('scroll', arguments.callee);
+    }
 });
 
 
