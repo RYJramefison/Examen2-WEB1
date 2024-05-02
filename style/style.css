@@ -539,6 +539,19 @@ header {
     justify-content: center;
     align-items: center;
 }
+.manquant{
+    padding-block: 2vh;
+    padding-inline: 2vw;
+    background-color: #1c1c1c;
+    border-radius: 1ch;
+    position: absolute;
+    display: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-left: -20%;
+    margin-bottom: -40%;
+}
 .formReservation {
     background-color: #159fae87;
     width: 80%;

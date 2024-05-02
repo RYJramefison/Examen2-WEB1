@@ -149,6 +149,7 @@ window.addEventListener('scroll', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const reservationButton = document.querySelector('.buttonReservation button');
     const reservationSuccess = document.querySelector(".buttonReservation h5");
+    const reservationFailed = document.querySelector(".manquant");
     reservationButton.addEventListener('click', function() {
         const inputs = document.querySelectorAll('.makeReservationForm input');
         let allFilled = true;
@@ -164,8 +165,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 reservationSuccess.style.display = "none";
             }, 2000)
         } else {
-            alert('Problème : Veuillez remplir tous les champs.');
-
+            reservationFailed.style.display = "block";
+            setTimeout(function() {
+                reservationFailed.style.display = "none";
+            }, 2000)
         }
     });
 });
