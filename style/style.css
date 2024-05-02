@@ -661,7 +661,7 @@ header {
     position: absolute;
     right: 12%;
     margin-top: -2%;
-    border-radius: 5ch;
+    border-radius: 3ch;
     color: white;
     font-weight: 600;
     margin-inline: 10px;
@@ -1617,9 +1617,8 @@ header {
     padding-inline: 3vw;
     background-color: #2d9a36;
     position: absolute;
-    /* right: 12%; */
     margin-bottom: -12vh;
-    border-radius: 5ch;
+    border-radius: 3ch;
     color: white;
     font-weight: 600;
 }
